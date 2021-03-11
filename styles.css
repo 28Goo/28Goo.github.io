@@ -1,0 +1,190 @@
+header {
+  width: 85%;
+  margin: auto;
+  font-family: "Barlow", sans-serif;
+}
+
+.navbar-brand {
+  flex: 1;
+  font-size: 35px;
+}
+
+.navbar .navbar-nav .nav-item {
+  font-size: 17px;
+  margin: 0 30px;
+}
+
+main {
+  font-family: "Barlow", sans-serif;
+}
+
+img {
+  border-radius: 30px;
+}
+.headContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 200px;
+  animation: drop 1s ease;
+}
+
+.headText {
+  font-size: 50px;
+  margin: 40px;
+  margin-left: 50px;
+}
+
+.headImage img {
+  height: 600px;
+}
+
+.midContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(92, 131, 92);
+  color: black;
+}
+
+.midContainer a {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.midContainer h4 {
+  animation: drop 2s ease;
+}
+
+.midImage {
+  text-align: justify;
+  padding: 50px;
+  animation: drop 2s ease;
+}
+
+.midImage img {
+  display: block;
+  margin: 0 auto;
+}
+
+.midCaption {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.botContainer {
+  display: flex;
+  padding: 50px;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  animation: drop 3s ease;
+}
+
+.botText {
+  margin-left: 50px;
+}
+
+.botImage img {
+  height: 350px;
+}
+
+.botText a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  font-family: "Barlow", sans-serif;
+  color: black;
+}
+.aboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(92, 131, 92);
+  text-align: center;
+}
+
+.socials {
+  margin: 50px 200px;
+}
+
+.socials a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 200px;
+}
+
+.question h3 {
+  margin-right: 30px;
+}
+
+.form p {
+  margin: 10px;
+}
+input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.submit {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .headContainer {
+    flex-direction: column;
+  }
+
+  .headText {
+    font-size: 40px;
+  }
+
+  .headImage img {
+    height: 400px;
+  }
+
+  .midContainer {
+    flex-direction: column;
+  }
+
+  .botContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .botText {
+    margin: 20px;
+  }
+
+  .aboutMe {
+    flex-direction: column;
+  }
+}

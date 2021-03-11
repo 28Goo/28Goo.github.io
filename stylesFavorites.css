@@ -1,0 +1,274 @@
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+header {
+  width: 85%;
+  margin: auto;
+}
+
+.navbar-brand {
+  flex: 1;
+  font-size: 35px;
+}
+
+.navbar .navbar-nav .nav-item {
+  font-size: 17px;
+  margin: 0 30px;
+}
+
+main {
+  font-family: "Barlow", sans-serif;
+}
+
+.league {
+  position: relative;
+}
+.league video {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(50%);
+}
+
+.leagueLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leagueLogo img {
+  height: 450px;
+  animation: drop 2s ease;
+}
+
+.underlineTop {
+  width: 20%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: solid black 10px;
+}
+
+.wonderEgg {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  margin: 50px;
+  animation: drop 2s ease;
+}
+
+.wonderEgg img {
+  height: 350px;
+  border-radius: 30px;
+  border: solid black;
+}
+
+.wonderTitle {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.wonderDesc {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.wonderDesc a {
+  text-decoration: none;
+  color: black;
+}
+
+.underlineBottom {
+  width: 20%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: solid black 10px;
+}
+
+.valorant {
+  position: relative;
+}
+
+.valorant video {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: brightness(50%);
+}
+
+.valorantLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.valorantLogo img {
+  height: 130px;
+  animation: drop 2s ease;
+}
+
+.silentVoice {
+  display: flex;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  margin: 50px;
+  animation: drop 2s ease;
+}
+
+.silentImage img {
+  border-radius: 30px;
+  border: solid black;
+  order: 2;
+}
+
+.silentTitle {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.silentDesc {
+  font-size: 17px;
+  text-align: justify;
+}
+
+.silentDesc a {
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  font-family: "Barlow", sans-serif;
+  color: black;
+}
+.aboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(92, 131, 92);
+  margin-top: 100px;
+  text-align: center;
+}
+
+.socials {
+  margin: 50px 200px;
+  color: black;
+}
+
+.socials a {
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 200px;
+}
+
+.question h3 {
+  margin-right: 30px;
+}
+
+.form p {
+  margin: 10px;
+}
+input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+.submit {
+  margin-top: 20px;
+  border-radius: 10px;
+  border: solid black 2px;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 20px;
+  }
+  .navbar .navbar-nav .nav-item {
+    font-size: 15px;
+  }
+
+  .leagueLogo img {
+    height: 150px;
+  }
+
+  .wonderEgg {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .wonderEgg img {
+    height: 200px;
+  }
+
+  .wonderTitle {
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .wonderDesc {
+    font-size: 15px;
+  }
+
+  .valorantLogo img {
+    height: 30px;
+  }
+
+  .silentVoice {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .silentImage img {
+    height: 150px;
+  }
+
+  .silentTitle {
+    font-size: 25px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .silentDesc {
+    font-size: 15px;
+  }
+
+  .row1,
+  .row2,
+  .aboutMe {
+    flex-direction: column;
+  }
+
+  .socials a {
+    font-size: 18px;
+  }
+}

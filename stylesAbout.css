@@ -1,0 +1,246 @@
+body {
+  background-color: black;
+  color: white;
+  animation: color 2s ease;
+}
+
+.bar {
+  display: flex;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  animation: slideRight 2s ease;
+}
+.bar a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+.aboutContent {
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  animation: slideLeft 2s ease;
+}
+
+.about {
+  position: fixed;
+  bottom: 0%;
+  right: 24%;
+  font-size: 300px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: -5px;
+  animation: drop 2s ease;
+}
+
+.socMed {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-family: "Barlow", sans-serif;
+  font-size: 15px;
+  animation: slideRight 2s ease;
+}
+
+.socMed a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+.circle1 {
+  position: absolute;
+  top: 24%;
+  right: 20%;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fade 2s ease;
+}
+
+.circle2 {
+  position: absolute;
+  top: 14%;
+  left: 40%;
+  height: 89px;
+  width: 89px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fade 2s ease;
+}
+
+.circle3 {
+  position: absolute;
+  top: 76%;
+  right: 10%;
+  height: 120px;
+  width: 120px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fade 2s ease;
+}
+
+.circle4 {
+  position: absolute;
+  top: 56%;
+  left: 20%;
+  height: 140px;
+  width: 140px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fade 2s ease;
+}
+
+.circle5 {
+  position: absolute;
+  top: 6%;
+  left: 10%;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fade 2s ease;
+}
+
+.playground {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  right: 5%;
+  animation: fade 2s ease;
+}
+
+.orangeButton {
+  height: 37px;
+  width: 37px;
+  background-color: orange;
+  border-radius: 20px;
+  border-color: white;
+  margin-top: 10px;
+}
+
+.blueButton {
+  height: 37px;
+  width: 37px;
+  background-color: blue;
+  border-radius: 20px;
+  border-color: white;
+  margin-top: 10px;
+}
+
+.purpleButton {
+  height: 37px;
+  width: 37px;
+  background-color: purple;
+  border-radius: 20px;
+  border-color: white;
+  margin-top: 10px;
+}
+
+@keyframes drop {
+  from {
+    transform: translateY(-1000px);
+  }
+
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(50px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes color {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: black;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bar {
+    position: absolute;
+    flex-direction: column;
+    left: 10%;
+  }
+
+  .bar a {
+    font-size: 20px;
+    margin: 6px;
+  }
+
+  .aboutContent {
+    position: absolute;
+    left: 10%;
+    font-size: 15px;
+  }
+
+  .about {
+    bottom: 10%;
+    left: 1%;
+    font-size: 130px;
+  }
+
+  .circle1 {
+    position: absolute;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+  }
+
+  .circle2 {
+    position: absolute;
+    top: 10%;
+    height: 30px;
+    width: 30px;
+  }
+
+  .circle3,
+  .circle4,
+  .circle5 {
+    display: none;
+  }
+}
